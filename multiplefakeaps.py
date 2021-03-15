@@ -19,3 +19,9 @@ if __name__ == "__main__":
     ssids_macs = [ (faker.name(), faker.mac_address()) for i in range(n_ap) ]
     for ssid, mac in ssids_macs:
         Thread(target=send_beacon, args=(ssid, mac)).start()
+
+
+"""All I did here, is wrapping the previous lines of code in a function, and generate random MAC addresses and 
+SSIDs using faker package, and then start a separate thread for each access point, once you execute the script, 
+the interface will send 5 beacons each 100 milliseconds (at least in theory), 
+this will result to an appearing of five fake access points"""
