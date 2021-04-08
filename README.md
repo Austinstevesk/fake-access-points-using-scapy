@@ -8,7 +8,7 @@ cd fake-access-points-using-scapy
 #Install necessary packages
 pip3 install -r requirements.txt
 
-#Install aircrack
+#Install aircrack using:
 apt-get install aircrack-ng
 
 #Enable monitor mode using aircrack-ng
