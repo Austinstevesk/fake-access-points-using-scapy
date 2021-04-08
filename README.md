@@ -20,6 +20,7 @@ root@austin:~# airmon-ng start wlan0
 #You are now set to run the file
 $python3 fakeap.py
     -This creates one BSSID
+    
 $python3 multiplefakeaps.py
     -Creates five BSSIDs
 
